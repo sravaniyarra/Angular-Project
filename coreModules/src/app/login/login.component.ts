@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       if (user){
         alert("Login Success!!")
         this.loginForm.reset();
-        this.router.navigate(['manage-details'])
+        this.router.navigate(['menubar'])
       }else{
         alert("User not found!!")
       }

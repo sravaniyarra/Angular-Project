@@ -20,7 +20,7 @@ label {
     -moz-box-shadow: 0px 2px 2px rgba(154, 10, 103, 0.3);
     -webkit-box-shadow: 0px 2px 2px rgba(107, 23, 137, 0.3);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    background-color: rgb(75, 20, 75);
+    background-image: linear-gradient(to bottom,green,rgb(197, 28, 149));
     color:#f7f7f7;
   }
   
@@ -53,6 +53,7 @@ img  {
  .text-danger{
   font-size: x-small;
  }
- .imageclass{
-  background-image: url("img/mobile-background-flight.jpg");
- }
+.btn{
+  background-color: rgb(8, 44, 73);
+  color: #f7f7f7;
+}

@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from '../cart.service';
+import { CartService } from '../../cart.service';
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-headers',
+  templateUrl: './headers.component.html',
+  styleUrls: ['./headers.component.css']
 })
-export class HomeComponent implements OnInit {
-
+export class HeadersComponent implements OnInit {
 
   public totalItem : number = 0;
   public searchTerm !: string;

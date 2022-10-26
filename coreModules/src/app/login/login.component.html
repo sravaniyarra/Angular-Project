@@ -1,24 +1,42 @@
-<body class="imageclass">
-<div class="details">
-<form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+<section class="h-100 gradient-form" style="background-color: rgb(247, 237, 237);">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+    <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
     <ul>
     <h2>Please Sign-in</h2>
     <li>
     <label></label></li>
     <li>
-        <div class="mb-3">
-    <input class="inp" type="email" formControlName="email" name="email" placeholder="Enter email" required>
-     <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">Email required!!</span>      
-</div>
-     </li>
+    <div class="form-outline mb-4">
+    <input type="email" id="form2Example11" class="form-control" formControlName="email" name="email"
+      placeholder="email address" required/>
+    <label class="form-label" for="form2Example11">Username</label>
+    <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">Email required!!</span>      
+    </div></li>
      <li>
-    <label></label>
-     <input class="inp" type="password" formControlName="password" name="passw" placeholder="Password" minlength="8"required>
-     <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Password required!!</span>
+        <div class="form-outline mb-4">
+            <input type="password" id="form2Example22"   placeholder="Password" minlength="8" required class="form-control" formControlName="password" name="passw" />
+            <label class="form-label" for="form2Example22">Password</label>
+            <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Password required!!</span>
+          </div>
+    
     <button class="butt" [disabled]="!loginForm.value">Sign-in</button>
+    <a href="#!" style="color: black;">Forgot password?</a>
 </ul>
-<a style="color:#fff;margin: top 10px;" routerLink="/registration">New User? Click here to sign Up!!</a>
+<div class="d-flex align-items-center justify-content-center pb-4">
+        <p class="mb-0 me-2">Don't have an account?</p>
+        <button type="button" class="btn btn-success">
+        <a routerLink="/registration" style="color: white;">Create New</a>
+    </button>
+    </div>
 </form>
-</div>
-</body>
 
+
+
+
+ 

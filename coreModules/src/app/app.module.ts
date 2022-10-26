@@ -12,6 +12,11 @@ import { FormsModule, ReactiveFormsModule, NgForm } from '@angular/forms';
 import { ServiceService } from './service.service';
 import { ManageDetailsComponent } from './manage-details/manage-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MenubarComponent } from './menubar/menubar.component';
+import { CartComponent } from './componentt/cart/cart.component';
+import { ProductsComponent } from './componentt/products/products.component';
+import { HeadersComponent } from './componentt/headers/headers.component';
+ 
 
 
 const routes:Routes=[
@@ -29,7 +34,19 @@ const routes:Routes=[
    },
    {
     path:"manage-details",component:ManageDetailsComponent
+   },
+   {
+    path:"menubar",component:MenubarComponent
+   },
+   {
+    path:"cart",component:CartComponent
+   },{
+    path:"headers",component:HeaderComponent
+   },
+   {
+    path:"products",component:ProductsComponent
    }
+   
 ]
 
 @NgModule({
@@ -38,7 +55,9 @@ const routes:Routes=[
     RegistrationComponent,
     LoginComponent,
     HeaderComponent,
-    ManageDetailsComponent
+    ManageDetailsComponent,
+    MenubarComponent,
+    HeadersComponent
  
   ],
   imports: [

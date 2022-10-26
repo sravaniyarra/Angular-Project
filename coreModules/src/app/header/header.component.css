@@ -1,30 +1,44 @@
 
 .main {
-    overflow: hidden;
-    background-image: repeating-linear-gradient(rgb(66, 19, 66),rgb(192, 46, 192))
-  }
-  
-  .main a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .main a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .main a.active {
-    background-color: rgb(186, 108, 19);
-    color: white;
-  }
+  overflow: hidden;
+  background-image: repeating-linear-gradient(rgb(66, 19, 66),rgb(192, 46, 192))
+}
+.home{
 
-    ul{
-      list-style: none;
-      display: flex;
-      justify-content:flex-end;
-    }
+  justify-content: flex-start;
+}
+.search{
+  display: flex;
+  justify-content: end;
+}
+input{
+  border-radius: 10px;
+}
+
+.main a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main a.active {
+  background-color: rgb(61, 9, 205);
+  color: white;
+}
+
+
+  .logreg{
+    justify-content:flex-end;
+  } 
+  ul{
+    list-style: none;
+    
+  }

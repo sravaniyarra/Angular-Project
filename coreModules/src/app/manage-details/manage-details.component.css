@@ -5,22 +5,20 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .cardheader{
-    background-color: rgb(220, 184, 24);
+    background-color: rgb(45, 45, 214);
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
 }
 .labelclass{
-    color: rgb(173, 145, 23);
+    color: rgb(45, 45, 214);
 }
 .btn{
-    background-color:  rgb(220, 184, 24) ;
+    background-color:  rgb(45, 45, 214) ;
     color: white;
     margin-top: 20px;
 }
-.card{
-    background-image: url("img/male-hand-holding-plane-airplane-icon-blue-background-banner-nline-ticket-purchase-travel-icons-about-travel-planning-transportation-hotel-flight-passport-flight-ticket-booking-concept_150455-11074.jpg");
-}
+
 h1{
     color:white;
     font-family: 'Times New Roman', Times, serif;

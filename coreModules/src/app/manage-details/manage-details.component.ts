@@ -11,13 +11,10 @@ import { DetailsModel } from './details-dashbord.model';
 export class ManageDetailsComponent implements OnInit {
    isedit=false;
   formdata = new FormGroup({
-    from : new FormControl(''),
-    to : new FormControl(''),
-    depart: new FormControl(''),
-    return: new FormControl(''),
-    class : new FormControl(''),
-    adult: new FormControl(''),
-    child: new FormControl(''),
+    Username : new FormControl(''),
+    fullname: new FormControl(''),
+   email: new FormControl(''),
+    number: new FormControl(''),
     
  });
  indexselectedtoEdit;
@@ -33,7 +30,7 @@ export class ManageDetailsComponent implements OnInit {
         this.listOfData.push(datafromdb)
        })  
     })
-  }
+  } 
   onCancel(){ 
       this.formdata.reset()
     }

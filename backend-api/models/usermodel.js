@@ -1,27 +1,17 @@
 let mongoose = require('mongoose')
 
 let userSchema = new mongoose.Schema({
-    from : {
+    Username : {
         type:String,
     },
-    to : {
+    fullname : {
         type:String,
     },
-    depart : {
+    email : {
         type:String
     },
-    return : {
-        type:String,
-    },
-    class: {
-        type:String,
-        required : false
-    },
-    adult : {
-        type:String,
-    },
-    child : {
-        type:String,
+    number : {
+        type:Number,
     }
 }) 
 

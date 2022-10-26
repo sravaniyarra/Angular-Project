@@ -10,13 +10,10 @@ router.get('/',async (req,res)=>{
 
 router.post('/',async (req,res)=>{
     var reqbody = {
-        from:req.body.from,
-        to:req.body.to,
-        depart : req.body.depart,
-        return : req.body.return,
-        adult : req.body.adult,
-       child :req.body.child,
-        class : req.body.class ? req.body.class : "Hello"
+        Username:req.body.Username,
+        fullname:req.body.fullname,
+        email : req.body.email,
+        number : req.body.number
 
     }   
     console.log('reqbody' , reqbody)
